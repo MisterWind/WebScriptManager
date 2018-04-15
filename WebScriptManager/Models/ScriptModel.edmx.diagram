@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a3c921b460f2431a96034f06bb5241ff" Name="Diagram1" ZoomLevel="54" >
+        <EntityTypeShape EntityType="ScriptModel.User" Width="1.5" PointX="3.125" PointY="3.5" />
+        <EntityTypeShape EntityType="ScriptModel.Scenario" Width="1.5" PointX="1.125" PointY="6.75" />
+        <EntityTypeShape EntityType="ScriptModel.Sensor" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ScriptModel.ControlBox" Width="1.5" PointX="9" PointY="3.875" />
+        <AssociationConnector Association="ScriptModel.ScriptControlBox" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ScriptModel.SensorType" Width="1.5" PointX="4.75" PointY="7.875" />
+        <AssociationConnector Association="ScriptModel.TypeSensorScenario" />
+        <EntityTypeShape EntityType="ScriptModel.SmartThing" Width="1.5" PointX="12.875" PointY="4" />
+        <EntityTypeShape EntityType="ScriptModel.Admin" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="ScriptModel.DoubleSensor" Width="1.5" PointX="13.875" PointY="6.625" />
+        <InheritanceConnector EntityType="ScriptModel.DoubleSensor" />
+        <EntityTypeShape EntityType="ScriptModel.BoolSensor" Width="1.5" PointX="13.875" PointY="8.375" />
+        <InheritanceConnector EntityType="ScriptModel.BoolSensor" />
+        <EntityTypeShape EntityType="ScriptModel.DoubleSmartThing" Width="1.5" PointX="15.75" PointY="5" />
+        <InheritanceConnector EntityType="ScriptModel.DoubleSmartThing" />
+        <EntityTypeShape EntityType="ScriptModel.UserGroup" Width="1.5" PointX="6.25" PointY="3.625" />
+        <EntityTypeShape EntityType="ScriptModel.BoolSmartThing" Width="1.5" PointX="15.75" PointY="3.75" />
+        <InheritanceConnector EntityType="ScriptModel.BoolSmartThing" />
+        <InheritanceConnector EntityType="ScriptModel.BoolSmartThing" />
+        <InheritanceConnector EntityType="ScriptModel.DoubleSmartThing" />
+        <EntityTypeShape EntityType="ScriptModel.SmartThingType" Width="2.5" PointX="9.75" PointY="1.25" />
+        <AssociationConnector Association="ScriptModel.TypeSmartThingSmartThing" />
+        <AssociationConnector Association="ScriptModel.TypeSmartThingScenario" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="ScriptModel.ControlBoxSmartThing" />
+        <EntityTypeShape EntityType="ScriptModel.SmartPlace" Width="1.5" PointX="9.5" PointY="10" />
+        <AssociationConnector Association="ScriptModel.SmartThingSmartPlace" />
+        <AssociationConnector Association="ScriptModel.SensorSmartPlace" />
+        <EntityTypeShape EntityType="ScriptModel.LicenseDictionary" Width="1.5" PointX="15.875" PointY="10.25" />
+        <EntityTypeShape EntityType="ScriptModel.SmartThingTypesDictionary" Width="2.625" PointX="15.75" PointY="1.5" />
+        <AssociationConnector Association="ScriptModel.SensorTypeSensor" />
+        <AssociationConnector Association="ScriptModel.ControlBoxSensor" />
+        <AssociationConnector Association="ScriptModel.AdminScenario" />
+        <AssociationConnector Association="ScriptModel.UserGroupUserGroup" />
+        <AssociationConnector Association="ScriptModel.SmartThingTypeSmartThingTypesDictionary" />
+        <AssociationConnector Association="ScriptModel.UserGroupSmartPlace" />
+        <AssociationConnector Association="ScriptModel.UserScenario" />
+        <AssociationConnector Association="ScriptModel.UserGroupControlBox" />
+        <AssociationConnector Association="ScriptModel.UserGroupUser" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
